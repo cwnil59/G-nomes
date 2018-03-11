@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>G-nomes</title>
+<meat charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script src="database.js"></script>
+</head>
+<body>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="database.html">Search</a></li>
+    <li><a href="addpatient.html">Add Patient</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="login.html">Logout</a></li>
+  </ul>
+</nav>
+
+  <h2>G-nome Patient Database</h2>
+<div class="bulk">
+  <h3>Search Database</h3>
+  <p>Patient iD: <input type="text" id="patient"></p>
+  <p>Drug: <input type="text" id="drug"></p>
+  <p><button onclick="search()" accesskey="enter">Search</button></p>
+  <h3 id="resultheading"></h3>
+  <p id="results"></p>
+  <table id=resulttable>
+    <tr>
+      <td><b>iD</b></td>
+      <td><b>Name</b></td>
+      <td><b>Gene(s)</b></td>
+      <td><b>Allele</b></td>
+      <td><b>Result(s)</b></td>
+    </tr>
+    </table>
+
+</div>
+
+</body>
+</html>

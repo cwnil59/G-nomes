@@ -1,0 +1,105 @@
+body {
+  font-family: sans-serif;
+  color: #595959;
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+h1 {
+  font-size: 6rem;
+  font-family:sans-serif;
+  color: #e9edee;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 0px;
+  margin: 0;
+}
+.welcome {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  background-image: url("backgroundimg.jpg");
+  background-size: cover;
+}
+
+.bulk {
+  background-color: #e9edee;
+  padding: 0px 0px 20px 40px;
+  margin: 0;
+}
+
+nav {
+  background-color: #e9edee;
+  padding: 10px 0px 10px 0px;
+}
+nav li {
+  display: inline;
+  font-size: 1.5rem;
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #595959;
+}
+nav a{
+  margin-right: 30px;
+  padding: 8px 18px;
+  position: relative;
+  color: #595959;
+  text-decoration: none;
+}
+nav a:active{
+  top:2px;
+
+}
+nav ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 8px 18px;
+  margin-left: 20px;
+}
+h2 {
+  color: #1a9988;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h3{
+  color: #1a9988;
+  font-size: 2.5rem;
+  text-align: left;
+  margin: 0;
+  padding: 20px 0px 0px 0px;
+}
+
+#subtitle{
+  font-size: 3rem;
+  padding-top: 0px;
+  padding-bottom: 200px;
+  margin: 0;
+}
+
+button{
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: #595959;
+}
+
+#logstatus{
+  font-size:1rem;
+  color: red;
+}
+
+table{
+  border=0;
+  padding: 8px 18px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+td{
+  padding-bottom: 20px;
+}
+
+#resulttable{
+  visibility: hidden;
+}
