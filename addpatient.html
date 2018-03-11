@@ -4,7 +4,7 @@
 <title>G-nomes</title>
 <meat charset="utf-8"/>
 <link rel="stylesheet" type="text/css" href="main.css">
-<script src="login.js"></script>
+<script src="addpatient.js"></script>
 </head>
 <body>
 <nav>
@@ -23,20 +23,72 @@
   <h3>Add Patient</h3>
 
   <table>
-  <tr><td>NHS iD: </td><td><input type="text"></td></tr>
-  <tr><td>Fore Name: </td><td><input type="text"></td></tr>
-  <tr><td>Last Name: </td><td><input type="text"></td></tr>
-  <tr><td>Gender: </td><td><select>
+  <tr><td>NHS iD: </td><td><input type="text" id="nhsid"></td></tr>
+  <tr><td>Forename: </td><td><input type="text" id="forename"></td></tr>
+  <tr><td>Last Name: </td><td><input type="text" id="lastname"></td></tr>
+  <tr><td>Gender: </td><td><select id="gender">
       <option value="Male">Male</option>
       <option value="Female">Female</option>
     </select>
   </td></tr>
-  <tr><td>Date of Birth: </td><td><input type="date"></td></tr>
-  <tr><td>Address Line 1: </td><td><input type="text"></td></tr>
-  <tr><td>Address Line 2: (optional)</td><td><input type="text"></td></tr>
-  <tr><td>Postal Code: </td><td><input type="text" size="7"></td></tr>
-  <tr><td><button>Submit</button></td><td></td></tr>
+  <tr><td>Date of Birth: </td><td><input type="date" id="dob"></td></tr>
+  <tr><td>Address Line 1: </td><td><input type="text" id="ad1"></td></tr>
+  <tr><td>Address Line 2: (optional)</td><td><input type="text" id="ad2"></td></tr>
+  <tr><td>Genetic Sequence</td><td><button>start sequencing</button></td><td></td></tr>
+  <tr><td><button onclick="addpatient()">Submit</button></td><td></td></tr>
 </table>
+
+<p id="results"></p>
+
+
+<h3>Full Patient Database</h3>
+<table id="fulldata">
+
+  <tr>
+    <td><b>MHS iD</b></td>
+    <td><b>Forename</b></td>
+    <td><b>Last Name</b></td>
+    <td><b>Address Line 1</b></td>
+    <td><b>Address Line 2</b></td>
+    <td><b>Gender</b></td>
+    <td><b>Date of Birth</b></td>
+    <td><b>Genetic Sequence</b></td>
+  </tr>
+
+  <tr>
+    <td>0000001</td>
+    <td>Bill</td>
+    <td>Gates</td>
+    <td>16 Drug Street</td>
+    <td>Alcohol Lane</td>
+    <td>M</td>
+    <td>1978-06-23</td>
+    <td>GGCCACGCTC</td>
+  </tr>
+
+  <tr>
+    <td>0000002</td>
+    <td>Helena</td>
+    <td>Yates</td>
+    <td>19 Lipton Lane</td>
+    <td>Booze Drive</td>
+    <td>F</td>
+    <td>1984-08-27</td>
+    <td>GGCCACGCTA</td>
+  </tr>
+
+  <tr>
+    <td>0000003</td>
+    <td>Roger</td>
+    <td>Abdeen</td>
+    <td>1 Peach Street</td>
+    <td>Tea Lane</td>
+    <td>M</td>
+    <td>2000-01-05</td>
+    <td>GGCCACGCTC</td>
+  </tr>
+</table>
+
 
 </div>
 
