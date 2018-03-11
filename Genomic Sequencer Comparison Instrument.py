@@ -2,20 +2,25 @@
 
 Normal =['G','G','C','C','A','C','G','C','T','C'] #Standard Genome
 #Patient =('a','g','b')
-GeneticSequence = 'GGCCACGCKA'                     #Patients Genome, could be faulty
-Sequencetobetested = tuple(GeneticSequence)
 
-
-#print(Normal[0])
-#print(Sequencetobetested[0])
+    
+GeneticSequence = str(input("Enter a genomic sequence with 10 letters, all in caps, using the 4 base pairs ACGT "))
+if len(GeneticSequence)>10:
+        
+    print("Too many base pairs")
+else:
+        
+                                                   #Patients Genome, could be faulty
+    Sequencetobetested = tuple(GeneticSequence)
+    
 
 def CompareIndexes():
     
     for i in range (len(Normal)):
         if (Normal[i])==(Sequencetobetested[i]):
-            print("Identical Genome Sequence")
+            print("Identical Base Pair")
         else:
-            print("Different Genome Sequence, therefore patient is deficient.")
+            print("Different Base Pair, therefore patient is deficient.")
         
     
 def CompareGenomicSequence():
@@ -38,6 +43,8 @@ def CompareGenomicSequence():
 
 def displayNormalSequence():
     print (Normal)
+
+
 
 
 #Normal =['G','G','C','C','A','C','G','C','T','C']
